@@ -117,11 +117,11 @@ To run inference with AssistRAG, follow these steps (take hotpotqa as an example
 ## Citation
 If you find this repo useful, please consider citing our work:
 ```
-@inproceedings{zhou2024TrustworthyRAG,
-author    = {Yujia Zhou and Yan Liu and Xiaoxi Li and Jiajie Jin and Hongjin Qian and Zheng Liu and Chaozhuo Li and Zhicheng Dou and Tsung-Yi Ho and and Philip S. Yu},
-  title     = {Trustworthiness in Retrieval-Augmented Generation Systems: A Survey},
+@inproceedings{zhou2024AssistRAG,
+author    = {Yujia Zhou and Zheng Liu and Zhicheng Dou},
+  title     = {Boosting the Potential of Large Language Models with an Intelligent Information Assistant},
   journal   = {CoRR},
-  volume    = {abs/2409.10102},
+  volume    = {abs/xxxx.xxxxx},
   year      = {2024}
 }
 ```

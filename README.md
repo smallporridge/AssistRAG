@@ -7,6 +7,18 @@ This repository contains the official code and documentation for our NeurIPS 202
 ## Overview
 AssistRAG introduces a framework to enhance large language models (LLMs) with an intelligent information assistant that optimizes performance on specific tasks through multi-stage training. Our approach leverages functions like knowledge extraction, note-taking, and query decomposition to expand LLM capabilities.
 
+## Requirement
+For model training and inference, please install following packages:
+```
+transformers >= 4.40.0
+torch >= 2.0.1
+```
+
+For passage and memory retrieval, please downloading following models:
+```
+https://huggingface.co/BAAI/llm-embedder
+```
+
 ## Training Data Download
 The training data for AssistRAG, including modules for knowledge extraction, note-taking, and query decomposition, can be downloaded [here](https://drive.google.com/file/d/1KdO7tT7zkON9FDeJT606Ksv2-HBPYRzP/view?usp=sharing).
 

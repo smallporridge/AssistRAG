@@ -62,6 +62,8 @@ eval_steps: 500
 ### 2. DPO Data Generation
 To generate preference alignment data, execute the `dpo.sh` script. This will generate preference data required for the next training stage.
 
+An Example of using LLaMA2-chat-7B as the main LLM can be downloaded can be downloaded [here](https://drive.google.com/file/d/1ZTskV0saERntC4v7h3LOIjVD7vPk1cRB/view?usp=sharing).
+
 ### 3. DPO Training
 The preference alignment stage further tunes the model to align with user preferences. It is also implemented using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). Use the following configuration:
 

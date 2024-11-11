@@ -34,7 +34,7 @@ def batch_encode(tokenizer: PreTrainedTokenizerFast, query: str, texts: List[str
 
 class WikiSearcher:
     def __init__(self,
-                 index_path='/data/webgpt/reflection/indexes/wikipedia-dpr-100w'):
+                 index_path='/wikipedia-dpr-100w'):
         self.index_path = index_path
         self.searcher = LuceneSearcher(index_path)
         self.tokenizer = AutoTokenizer.from_pretrained('/data/webgpt/models/simlm-msmarco-reranker')
@@ -84,8 +84,8 @@ class WikiSearcher:
 
 class MemorySearcher:
     def __init__(self,
-                 index_path='/data/webgpt/IIA/dataset/hotpot/index',
-                 dataset_path='/data/webgpt/IIA/dataset/hotpot/memory/final_output.json'):
+                 index_path='/AssistRAG/dataset/hotpot/index',
+                 dataset_path='/AssistRAG/dataset/hotpot/memory/final_output.json'):
         self.index_path = index_path
         self.searcher = LuceneSearcher(index_path)
         self.data = {}

@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # 定义输入文件和输出目录
-input_dir="/data/webgpt/IIA/dataset/hotpot/memory"
-output_dir="/data/webgpt/IIA/data/dpo" # 修改为您的输出目录
+input_dir="/AssistRAG//dataset/hotpot/memory"
+output_dir="/AssistRAG//data/dpo" # 修改为您的输出目录
 
 # 并行启动进程
 for i in {0..7}

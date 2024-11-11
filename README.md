@@ -125,7 +125,7 @@ eval_steps: 500
 
 ## Inference
 To run inference with AssistRAG, follow these steps (take hotpotqa as an example):
-1. **Memory Construction**: Run the `memory.sh` and `index.sh` script to initialize memory structures for knowledge retention.
+1. **Memory Construction**: Run the `memory.sh` and `index.sh` script to initialize memory structures for knowledge retention. `\AssistRAG\dataset\hotpot\memory` shows 10k lines, complete version can be downloaded [here](https://drive.google.com/file/d/1zs04fBn7LyIG1862zITR8-AXU85YJr2A/view?usp=sharing).
 2. **Answer Inference**: Execute `inference.sh` to generate model responses based on the trained model.
 
 ## Citation

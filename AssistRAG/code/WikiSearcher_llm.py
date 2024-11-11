@@ -16,8 +16,8 @@ class WikiSearcher_llm:
             dtype="fp16",
             accelerator=accelerator
         )
-        self.retriever.index("/data/webgpt/IIA/code/llm_embedder/data/nq/corpus.json", output_dir="/data/webgpt/IIA/code/llm_embedder/data/outputs", load_index=True)
-        self.corpus = datasets.load_dataset("json", data_files="/data/webgpt/IIA/code/llm_embedder/data/nq/corpus.json", split="train")
+        self.retriever.index("/llm_embedder/data/nq/corpus.json", output_dir="/llm_embedder/data/outputs", load_index=True)
+        self.corpus = datasets.load_dataset("json", data_files="/llm_embedder/data/nq/corpus.json", split="train")
 
     def search(self, query, hits):
         query_instruction = "Represent this query for retrieving relevant documents: "

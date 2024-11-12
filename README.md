@@ -135,7 +135,7 @@ If you find this repo useful, please consider citing our work:
 author    = {Yujia Zhou and Zheng Liu and Zhicheng Dou},
   title     = {Boosting the Potential of Large Language Models with an Intelligent Information Assistant},
   journal   = {CoRR},
-  volume    = {abs/xxxx.xxxxx},
+  volume    = {abs/2411.06805},
   year      = {2024}
 }
 ```

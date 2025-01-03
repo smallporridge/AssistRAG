@@ -32,16 +32,13 @@ The first stage in training, known as the Assistant Learning Stage, uses code ad
 model_name_or_path: THUDM/ChatGLM3-6B
 
 # Training Method
-stage: dpo
+stage: sft
 do_train: true
-finetuning_type: lora
-lora_target: all
-pref_beta: 0.1
-pref_loss: sigmoid  # choices: [sigmoid (dpo), orpo, simpo]
+finetuning_type: full
 
 # Dataset
 dataset: sft_assistrag
-template: llama3
+template: chatglm3
 cutoff_len: 2048
 max_samples: 1000
 overwrite_cache: true
@@ -93,7 +90,7 @@ pref_loss: sigmoid  # choices: [sigmoid (dpo), orpo, simpo]
 
 # Dataset
 dataset: dpo_assistrag
-template: llama3
+template: chatglm3
 cutoff_len: 2048
 max_samples: 1000
 overwrite_cache: true
